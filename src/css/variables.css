@@ -1,0 +1,7 @@
+:root{
+    --input-errors-color: rgb(255, 82, 82);
+    --active-input-color: linear-gradient(rgb(100, 72, 254) to rgb(96, 5, 148));
+
+    --btn-color: rgb(33, 9, 47);
+    
+}
