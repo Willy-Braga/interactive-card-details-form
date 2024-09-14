@@ -20,20 +20,20 @@
 </head>
 <body>
     <section class="background-card">
-        <div class="img-background">
-            <img src="src/images/bg-main-mobile.png" alt="" class="background-img">
-        </div>
 
         <div class="card-info">
-            <img src="src/images/bg-card-front.png" alt="" class="card-front">
-            <img src="src/images/bg-card-back.png" alt="" class="card-back">
             <div class="description-card">
-                <input type="number" id="number-card" class="number-card" readonly>
-                <span class="name-card" id="name-carde">Jane Appleseed</span>
-                <input type="number" name="date-card" id="date-card" class="date-card" readonly>
+                <img src="src/images/card-logo.svg" alt="" class="img-logo">
+                <div>
+                    <span type="number" id="number-card" class="number-card" >0000 0000 0000 0000</span>
+                    <span class="name-card" id="name-carde">Jane Appleseed</span>
+                    <span type="number" name="date-card" id="date-card" class="date-card">00/00</span>
+                </div>
             </div>
             <div class="cvc-card-container">
-                <input type="number" name="cvc-card" id="cvc-card" class="cvc-card" readonly>
+                <div>
+                    <span type="number" name="cvc-card" id="cvc-card" class="cvc-card">000</span>
+                </div>
             </div>
         </div>
     </section>
@@ -48,13 +48,17 @@
                 <label for="number">Numero do cartão</label>
                 <input type="number" id="number" name="number" placeholder="e.g. 1234 5678 9123 0000" required>
             </div>
-            <div class="card-input">
-                <label for="date">Data de expiração</label>
-                <input type="date" id="month-expiry" name="MM" placeholder="MM" required>
-                <input type="date" name="YY" id="yaer-expiry" placeholder="YYYY" required>
+            <div class="card-input card-expiry-date">
+                <div class="expiry-date">
+                    <label for="date">Data de expiração</label>
+                    <div class="container-input-date">
+                        <input type="number" min="1" max="12" id="month-expiry" class="input-date" name="MM" placeholder="MM" required>
+                        <input type="number" name="YY" min="2024" max="2100" id="yaer-expiry" class="input-date" placeholder="YYYY" required>
+                    </div>
+                </div>
                 <div class="cvc-input">
                     <label for="number">CVC</label>
-                    <input type="number" id="cvc" name="cvc" class="cvc" placeholder="e.g. 123" required>
+                    <input type="number" id="cvc" name="cvc" class="cvc input-date" placeholder="e.g. 123" required>
                 </div>
             </div>
             <div class="card-input">
