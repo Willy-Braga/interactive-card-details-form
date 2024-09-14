@@ -1,0 +1,185 @@
+body{
+    font-family: "Space Grotesk", system-ui;
+    font-size: 18px;
+    height: 100vh;
+    justify-content: space-between;
+}
+
+.background-card{
+    background-image: url("../images/bg-main-mobile.png");
+    background-size: cover;
+    background-position: center;
+    height: 360px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    border-radius: 0 0 10px 10px;
+}
+
+.card-info{
+    display: flex;
+}
+
+.description-card{
+    color: white;
+    background: url(../images/bg-card-front.png) no-repeat center center;
+    background-size: cover;
+    width: 88%;
+    height: 200px;
+    border-radius: 10px;
+    position: absolute;
+    left: 7px;
+    bottom: -85px;
+    z-index: 2;
+}
+
+.description-card div{
+    display: flex;
+    align-items: flex-end;
+    height: 100%;
+    position: relative;
+    justify-content: space-around;
+    padding-bottom: 16px;
+}
+
+.description-card .number-card{
+    position: absolute;
+    top: 92px;
+    left: 28px;
+    width: 85%;
+    font-size: 28px;
+}
+
+.img-logo{
+    position: absolute;
+    left: 14px;
+    top: 14px;
+}
+
+.name-card{
+    font-size: 22px;
+}
+
+.date-card{
+    font-size: 24px;
+    text-align: end;
+    width: 26%;
+}
+
+.number-card, .date-card, .cvc-card{
+    cursor: none;
+    border: none;
+    background: none;
+}
+
+.number-card, .date-card, .cvc-card{
+    color: white !important;
+}
+
+.cvc-card-container{
+    background: url(../images/bg-card-back.png) no-repeat center center;
+    background-size: cover;
+    width: 88%;
+    height: 200px;
+    position: absolute;
+    border-radius: 10px;
+    right: 8px;
+    bottom: 32px;
+}
+
+.cvc-card-container div{
+    position: relative;
+}
+
+.cvc-card-container .cvc-card{
+    position: absolute;
+    right: 34px;
+    top: 88px;
+    width: 20%;
+    height: 29.5px;
+    text-align: center;
+    font-size: 20px;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* Card Info */
+
+.card{
+    margin-top: 85px;
+}
+
+body, .card-input, .card-container, .expiry-date, .cvc-input {
+    display: flex;
+    flex-direction: column;
+}
+
+.card-container {
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    gap: 20px;
+}
+
+.card-input {
+    width: 90%;
+    gap: 6px;
+}
+
+.card-input input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+
+.card-input label{
+    font-size: 25px;
+    max-width: 216px;
+    font-weight: 800;
+}
+
+.card-expiry-date {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: 46px;
+}
+
+.expiry-date{
+    gap: 12px;
+}
+
+.container-input-date{
+    display: flex;
+    gap: 12px;
+}
+
+.input-date{
+    padding-left: 10px;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+
+.btn-input{
+    height: 46px;
+    background: black;
+    color: wheat;
+    border-radius: 5px;
+}
+
+.cvc-input {
+    text-align: start;
+    justify-content: space-between;
+    height: 105px;
+}
