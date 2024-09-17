@@ -1,0 +1,260 @@
+/* Mobile */
+
+@media (min-width: 360px) {
+    .card-container {
+        padding: 44px 0;
+    }
+
+    .cvc-card-container, .description-card{
+        height: 192px;
+        transform: scale(0.85);
+    }
+
+    .description-card {
+        left: -7px;
+        bottom: -36px;
+    }
+
+    .cvc-card-container {
+        right: -7px;
+        bottom: 59px;
+    }
+
+    .cvc-card-container .cvc-card {
+        right: 24px;
+        top: 80px;
+    }
+}
+
+@media (min-width: 414px) and (max-width: 499px) {
+    .background-card {
+        height: 284px;
+    }
+
+    .cvc-card-container, .description-card {
+        height: 200px;
+        transform: scale(0.9);
+    }
+
+    .description-card {
+        left: 0;
+        bottom: -64px;
+    }
+
+    .cvc-card-container {
+        right: 0;
+        bottom: 42px;
+    }
+
+    .cvc-card-container .cvc-card {
+        right: 24px;
+        top: 84px;
+    }
+
+    .card-container {
+        padding: 22px 0;
+        gap: 20px;
+    }
+
+    .card-input input {
+        padding: 14px;
+    }
+
+    .card-input label {
+        font-size: 22px;
+    }
+
+    .btn-input {
+        height: 48px;
+    }
+}
+
+/* Desktop */
+
+
+@media (min-width: 600px) {
+    body {
+        height: 100vh;
+        width: 100vw;
+        flex-direction: row !important;
+    }
+
+    .background-card {
+        background-image: url(../images/bg-main-desktop.png);
+        height: 100%;
+        width: 55%;
+        border-radius: 0;
+    }
+
+    .card {
+        margin-top: 0;
+        display: flex;
+        justify-content: center;
+        /* padding-left: 60px; */
+        transform: scale(0.8);
+    }
+
+    .card-container {
+        align-items: flex-end;
+        justify-content: center;
+        width: 90%;
+        height: 100%;
+        gap: 20px;
+        transform: scale(1);
+    }
+
+    .card-input input {
+        padding: 18px;
+    }
+
+    .card-input label {
+        font-size: 22px;
+    }
+
+    .cvc-input {
+        gap: 10px;
+        height: auto;
+    }
+
+    .expiry-date {
+    gap: 12px;
+    width: 335px;
+    }
+
+
+    .description-card {
+        left: -37px;
+        top: 178px;
+        transform: scale(0.75);
+        width: 328px;
+    }
+
+    .description-card .number-card {
+        top: 120px;
+        left: 26px;
+        font-size: 20px;
+    }
+
+    .img-logo {
+        left: 26px;
+    }
+    
+    .name-card, .date-card {
+        font-size: 18px;
+    }
+    
+    .date-card {
+        text-align: start;
+    }
+
+    .cvc-card-container {
+        right: -116px;
+        bottom: 201px;
+        transform: scale(0.75);
+        width: 328px;
+    }
+
+    .btn-input {
+        height: 56px;
+    }
+}
+
+@media (min-width: 700px) {
+    .description-card {
+        left: 78px;
+    }
+}
+
+@media (min-width: 1024px) {
+    .background-card {
+        width: 35%;
+    }
+
+    .description-card {
+        left: 88px;
+        top: 238px;
+        transform: scale(1);
+    }
+
+    .cvc-card-container {
+        right: -142px;
+        bottom: 180px;
+        transform: scale(1);
+    }
+}
+
+@media (min-width: 1440px) {
+    .background-card {
+        width: 44%;
+    }
+
+    .card{
+        padding-left: 170px;
+    }
+
+    .card-container{
+        transform: scale(1);
+    }
+
+    .description-card {
+        left: 249px;
+        top: 100px;
+        transform: scale(1);
+        height: 38%;
+        width: 80%;
+    }
+
+    .description-card .number-card {
+        top: 157px;
+        left: 54px;
+        font-size: 31px;
+    }
+
+    .img-logo {
+        left: 54px;
+        top: 29px;
+    }
+
+    .cvc-card-container {
+        right: -219px;
+        bottom: 121px;
+        height: 38%;
+        width: 80%;
+    }
+
+    .name-card {
+        font-size: 24px;
+    }
+
+    .date-card {
+        font-size: 24px;
+    }
+
+
+    .cvc-card-container .cvc-card {
+        top: 114px;
+        font-size: 28px;
+    }
+
+    .card-input label {
+        max-width: 100%;
+        font-size: 24px;
+    }
+
+    .card-input input {
+        padding: 18px;
+    }
+
+    .card-input input::placeholder{
+        font-size: 22px;
+        text-align: start;
+    }
+
+    .btn-input {
+        height: 56px;
+    }
+
+    .btn-text{
+        font-size: 24px;
+    }
+}
