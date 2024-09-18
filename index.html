@@ -26,8 +26,8 @@
                 <img src="src/images/card-logo.svg" alt="" class="img-logo">
                 <div>
                     <span type="number" id="number-card" class="number-card" >0000 0000 0000 0000</span>
-                    <span class="name-card" id="name-carde">Jane Appleseed</span>
-                    <span type="number" name="date-card" id="date-card" class="date-card">00/00</span>
+                    <span class="name-card" id="name-card">Jane Appleseed</span>
+                    <span type="number" name="date-card" id="expiry-card" class="date-card">00/00</span>
                 </div>
             </div>
             <div class="cvc-card-container">
@@ -38,27 +38,31 @@
         </div>
     </section>
     
-    <section class="card">
-        <form action="post" class="card-container">
+    <section class="card" id="form-card">
+        <form action="post" class="card-container" id="form">
             <div class="card-input">
                 <label for="name">Nome</label>
-                <input type="text" id="name" name="name" placeholder="e.g. Jane Appleseed" required>
+                <input type="text" id="name" class="" name="name" placeholder="e.g. Jane Appleseed" novalidate>
+                <span id="error-name" class="error-disabled">Por favor preencha o nome completo</span>
             </div>
             <div class="card-input">
                 <label for="number">Numero do cartão</label>
-                <input type="number" id="number" name="number" placeholder="e.g. 1234 5678 9123 0000" required>
+                <input type="number" id="number" class="" name="number" placeholder="e.g. 1234 5678 9123 0000"  maxlength="16" >
+                <span id="error-number" class="error-disabled">Por favor preencha o número do cartão</span>
             </div>
             <div class="card-input card-expiry-date">
                 <div class="expiry-date">
                     <label for="date">Data de expiração</label>
                     <div class="container-input-date">
-                        <input type="number" min="1" max="12" id="month-expiry" class="input-date" name="MM" placeholder="MM" required>
-                        <input type="number" name="YY" min="2024" max="2100" id="yaer-expiry" class="input-date" placeholder="YYYY" required>
+                        <input type="number" min="1" max="12" id="month-expiry" class="" class="input-date" name="MM" placeholder="MM" maxlength="2">
+                        <input type="number" name="YY" min="2024" max="2100" id="year-expiry" class="input-date" placeholder="YYYY" maxlength="4" >
                     </div>
+                    <span id="error-expiry" class="error-disabled">Por favor preencha o mês e o ano de vencimento</span>
                 </div>
                 <div class="cvc-input">
                     <label for="number">CVC</label>
-                    <input type="number" id="cvc" name="cvc" class="cvc input-date" placeholder="e.g. 123" required>
+                    <input type="number" id="cvc" name="cvc" class="cvc input-date" placeholder="e.g. 123" maxlength="3" >
+                    <span id="error-cvc" class="error-disabled">Por favor preencha o código de segurança</span>
                 </div>
             </div>
             <div class="card-input">
@@ -67,6 +71,17 @@
                 </button>
             </div>
         </form>
+    </section>
+
+    <section id="success-card" class="success-container">
+        <div class="success">
+            <img src="src/images/icon-complete.svg" alt="Icon de sucesso">
+            <h3>Muito Obrigado</h3>
+            <p>Seu cartão foi adicionado com sucesso</p>
+            <button id="btn-success" class="btn-success">
+                <span class="btn-text">Continuar</span>
+            </button>
+        </div>
     </section>
 </body>
 </html>
